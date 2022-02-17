@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/hanna.santos@VALEMOBI.CORP/projetoartemobile/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml",
+            "outputFile": "/home/hanna.santos@VALEMOBI.CORP/projetoartemobile/Projeto-arte-mobile/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml",
             "map": [
                 {
                     "source": "/home/hanna.santos@VALEMOBI.CORP/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/res/values-de/values-de.xml",

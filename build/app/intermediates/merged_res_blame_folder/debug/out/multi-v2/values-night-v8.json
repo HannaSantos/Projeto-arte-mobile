@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/hanna.santos@VALEMOBI.CORP/projetoartemobile/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/hanna.santos@VALEMOBI.CORP/projetoartemobile/Projeto-arte-mobile/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/hanna.santos@VALEMOBI.CORP/projetoartemobile/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/hanna.santos@VALEMOBI.CORP/projetoartemobile/Projeto-arte-mobile/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
