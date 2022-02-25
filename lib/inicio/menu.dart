@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:projetoartemobile/historias/historias.dart';
 import 'package:projetoartemobile/inicio/widgets/texto-menu.dart';
+import 'package:projetoartemobile/login/login.dart';
 
 class Menu extends StatefulWidget {
   const Menu({Key? key}) : super(key: key);
@@ -43,15 +45,31 @@ class _MenuState extends State<Menu> {
               padding: const EdgeInsets.only(top: 200),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const <Widget>[
-                  TextoMenu(
-                    textoMenu: 'Navega historias das artes por ano',
+                children: <Widget>[
+                  InkWell(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CarouselDemo(),
+                      ),
+                    ),
+                    child: const TextoMenu(
+                      textoMenu: 'Navega historias das artes por ano',
+                    ),
                   ),
-                  TextoMenu(
+                  const TextoMenu(
                     textoMenu: 'Jogo de perguntas',
                   ),
-                  TextoMenu(
-                    textoMenu: 'Sair',
+                  InkWell(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginPage(),
+                      ),
+                    ),
+                    child: const TextoMenu(
+                      textoMenu: 'Sair',
+                    ),
                   ),
                 ],
               ),
