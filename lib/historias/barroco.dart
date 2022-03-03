@@ -8,9 +8,12 @@ class Barroco extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: const <Widget>[
-        Image(
-          image: AssetImage(
-            'assets/img/barroco.jpg',
+        Padding(
+          padding: EdgeInsets.only(top: 10),
+          child: Image(
+            image: AssetImage(
+              'assets/img/barroco.jpg',
+            ),
           ),
         ),
         FormatacaoText(

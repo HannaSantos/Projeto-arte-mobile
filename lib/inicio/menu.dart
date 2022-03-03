@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:projetoartemobile/historias/historias.dart';
+import 'package:projetoartemobile/inicio/principal.dart';
 import 'package:projetoartemobile/inicio/widgets/texto-menu.dart';
+import 'package:projetoartemobile/jogo/tela-jogo.dart';
 import 'package:projetoartemobile/login/login.dart';
 
 class Menu extends StatefulWidget {
@@ -18,7 +20,7 @@ class _MenuState extends State<Menu> {
       body: Stack(
         children: <Widget>[
           const Padding(
-            padding: EdgeInsets.only(top: 450),
+            padding: EdgeInsets.only(top: 576),
             child: Image(
               image: AssetImage('assets/img/picasso.png'),
               fit: BoxFit.cover,
@@ -28,7 +30,7 @@ class _MenuState extends State<Menu> {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Menu(),
+                builder: (context) => const Principal(),
               ),
             ),
             child: const Padding(
@@ -40,40 +42,99 @@ class _MenuState extends State<Menu> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(20),
-            child: Padding(
-              padding: const EdgeInsets.only(top: 200),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  InkWell(
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CarouselDemo(),
+            padding: const EdgeInsets.all(30),
+            child: Center(
+                child: Container(
+                   height: MediaQuery.of(context).size.height/ 1.9,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      InkWell(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CarouselDemo(),
+                          ),
+                        ),
+                        child: Container(
+                          height: 50,
+                          width: 300,
+                          alignment: const Alignment(0, 0),
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            border: Border.all(
+                              color: Colors.white,
+                              width: 2,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Text(
+                            'Navega historias das artes por ano',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
-                    child: const TextoMenu(
-                      textoMenu: 'Navega historias das artes por ano',
-                    ),
-                  ),
-                  const TextoMenu(
-                    textoMenu: 'Jogo de perguntas',
-                  ),
-                  InkWell(
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const LoginPage(),
+                      InkWell(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const TipoJogo(),
+                          ),
+                        ),
+                        child: Container(
+                          height: 50,
+                          width: 300,
+                          alignment: const Alignment(0, 0),
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            border: Border.all(
+                              color: Colors.white,
+                              width: 2,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Text(
+                            'Jogo de perguntas',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
-                    child: const TextoMenu(
-                      textoMenu: 'Sair',
-                    ),
+                      InkWell(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginPage(),
+                          ),
+                        ),
+                        child: Container(
+                          height: 50,
+                          width: 300,
+                          alignment: const Alignment(0, 0),
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            border: Border.all(
+                              color: Colors.white,
+                              width: 2,
+                            ),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Text(
+                            'Sair',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                ],
+                ),
               ),
-            ),
+            
           ),
         ],
       ),

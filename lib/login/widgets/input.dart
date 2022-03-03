@@ -8,7 +8,7 @@ class Inputs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: 20),
       width: MediaQuery.of(context).size.width / 1.5,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
